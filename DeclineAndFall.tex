@@ -1,0 +1,35 @@
+
+\documentclass[12pt]{book}
+\usepackage{fontspec}
+\usepackage{lettrine}
+\usepackage{geometry}
+\usepackage{marginnote}
+%\defaultfontfeatures{Ligatures={Required, Common,Contextual,Rare,Historic,TeX}}
+\usepackage[veryoldstyle]{kpfonts-otf}
+\usepackage{endnotes}
+\usepackage{multicol}
+
+\let\footnote=\endnote
+
+% octavo – Typeset books following classical design and layout
+%\usepackage{octavo}
+
+%\catcode`ſ=\active % Make ſ active
+%\newcommand ſ{s} % Now we can let it expand to s
+
+\begin{document}
+
+\title{The History of the Decline and Fall of the Roman Empire}
+\author{Edward Gibbon}
+\date{1776}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\include{Chapter_1/chapter_1}
+
+\begin{multicols*}{2}
+\theendnotes
+\end{multicols*}
+\end{document}
